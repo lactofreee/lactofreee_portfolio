@@ -1,26 +1,29 @@
 @import "tailwindcss";
 
+/* ─── CSS Variables ────────────────────────────────────────────────────────── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --navy: #0a192f;
+  --light-navy: #112240;
+  --green: #64ffda;
+  --slate: #8892b0;
+  --lightest-slate: #ccd6f6;
 }
 
+/* ─── Tailwind v4 Theme Tokens ─────────────────────────────────────────────── */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-navy: var(--navy);
+  --color-light-navy: var(--light-navy);
+  --color-green: var(--green);
+  --color-slate: var(--slate);
+  --color-lightest-slate: var(--lightest-slate);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* ─── Base Styles ──────────────────────────────────────────────────────────── */
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background-color: var(--navy);
+  color: var(--slate);
   font-family: Arial, Helvetica, sans-serif;
 }
